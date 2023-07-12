@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-highlight {
+    color: #FF4D00;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #FF4D00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {}
+
+input {
+    visibility: hidden;
+}
+
+.header {
+    position: relative;
+    height: 400px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./image/pexels-thiago-schlemper-10540962.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.header-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF4D00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+    background-color: #FF6600;
+}
+
+
+  
+ @keyframes fade {
+     0% {
+         opacity: 0;
+         transform: translateX(100%);
+     }
+
+     50% {
+         opacity: 1;
+         transform: translateX(0);
+     }
+
+     100% {
+         opacity: 0;
+         transform: translateX(-100%);
+     }
+ }
+
+ .fade-in-out {
+     width: 600px;
+     animation: fade 8s infinite;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 2rem;
+     background-color: #cc2828;
+     margin-left: auto;
+     margin-right: auto;
+     opacity: .75;
+     color: #fff;
+     border-radius: 4px;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     -o-border-radius: 4px;
+}
+
+.menu1 {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-item-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-item-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-item-price {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FF4D00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #FF6600;
+}
+
+.team {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+}
+
+.team-member-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member-name {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social-media {
+    display: flex;
+    align-items: center;
+}
+
+.footer .social-media a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer .social-media a:hover {
+    color: #ff5722;
+}
+
+.footer .phone {
+    font-size: 16px;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-item {
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-text {
+        margin-bottom: 10px;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+    }
+
+    .footer-links li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navbar-toggle-label {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-toggle-label span {
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: #333;
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-toggle-label span:nth-child(1) {
+        margin-bottom: 6px;
+    }
+
+    .navbar-toggle-label span:nth-child(2) {
+        margin-bottom: 6px;
+    }
+
+    .navbar-toggle-label span:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    #navbar-toggle:checked+.navbar-toggle-label span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    #navbar-toggle:checked+.navbar-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #navbar-toggle:checked+.navbar-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    #navbar-toggle:checked~.menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #navbar-toggle:checked~.menu li {
+        margin: 10px 0;
+    }
+}
