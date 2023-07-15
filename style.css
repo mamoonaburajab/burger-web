@@ -106,43 +106,43 @@ input {
     background-color: #FF6600;
 }
 
-.section-title{
-        display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 2rem;
-            background-color: #cc2828;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: .75;
-            color: #fff;
-            border-radius: 4px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            -ms-border-radius: 4px;
-            -o-border-radius: 4px;
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: #cc2828;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .75;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
-  
- @keyframes fade {
-     0% {
-         opacity: 0;
-         transform: translateX(100%);
-     }
 
-     50% {
-         opacity: 1;
-         transform: translateX(0);
-     }
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
 
-     100% {
-         opacity: 0;
-         transform: translateX(-100%);
-     }
- }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
- .fade-in-out {
-     width: 600px;
-     animation: fade 8s infinite;
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.fade-in-out {
+    width: 600px;
+    animation: fade 8s infinite;
 
 }
 
