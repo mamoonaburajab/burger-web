@@ -30,17 +30,53 @@ fetch('data.json')
             priceElement.classList.add('menu-item-price');
             menuItemElement.appendChild(priceElement);
 
-            // Create the add to cart button
+            const addToCart1Button1 = document.createElement('button');
+            addToCart1Button1.textContent = ' Add to Cart';
+            addToCart1Button1.classList.add('add-to-cart');
+
+
             const addToCartButton = document.createElement('button');
             addToCartButton.textContent = 'View Details';
             addToCartButton.classList.add('add-to-cart');
-            menuItemElement.appendChild(addToCartButton);
+
+
+            const buttonContainer = document.createElement('div');
+            buttonContainer.classList.add('button-container');
+            buttonContainer.appendChild(addToCart1Button1);
+            buttonContainer.appendChild(addToCartButton);
+
+
+            menuItemElement.appendChild(buttonContainer);
+            //create size
+            const ssizeElement = document.createElement('h5');
+            ssizeElement.textContent = "S";
+            ssizeElement.classList.add('menu-item-size');
+            //create size
+            const msizeElement = document.createElement('h6');
+            msizeElement.textContent = "M";
+            msizeElement.classList.add('menu-item-size');
+            menuItemElement.appendChild(msizeElement);
+            //create size
+            const lsizeElement = document.createElement('h6');
+            lsizeElement.textContent = "L";
+            lsizeElement.classList.add('menu-item-size');
+            menuItemElement.appendChild(lsizeElement);
+
+            //size
+            const sizeContainer = document.createElement('div');
+            sizeContainer.classList.add('sizeContainer');
+            
+            sizeContainer.appendChild(ssizeElement);
+            sizeContainer.appendChild(msizeElement);
+            sizeContainer.appendChild(lsizeElement);
+            menuItemElement.appendChild(sizeContainer);
 
             // Event handler for button click
             addToCartButton.addEventListener('click', function () {
                 // Navigate to meal.html page
                 window.location.href = 'meal.html';
             });
+          
 
 
             // Append the menu item to the menu section
